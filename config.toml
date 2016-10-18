@@ -1,4 +1,4 @@
-baseurl = "https://bootstrap-guidelines.herokuapp.com"
+baseurl = "https://bootstrap-guidelines.herokuapp.com/"
 languageCode = "en-us"
 title = "Bootstrap"
 theme = "blackburn"

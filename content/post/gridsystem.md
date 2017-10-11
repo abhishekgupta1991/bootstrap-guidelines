@@ -5,9 +5,8 @@ title = "Grid System"
 
 +++
 
-Bootstrap's include mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options. Bootstrap grid system allows up to 12 columns across the page. Basically it divides the page into 12 equal parts.
-
 <h3>Bootstrap grid system</h3>
+<p>Bootstrap's include mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options. Bootstrap grid system allows up to 12 columns across the page. Basically it divides the page into 12 equal parts.</p>
 <p>Bootstrap’s grid system is made up of 3 things:</p>
 <ul>
   <li>Container</li>
@@ -16,12 +15,12 @@ Bootstrap's include mobile first fluid grid system that appropriately scales up 
 </ul>
 <hr/>
 <h4>Creating Container or Container Fluid</h4>
-<p>Bootstrap’s grid system needs a container or container-fluid to hold rows and columns. A container is a simple <div> element with a class of .container or .container-fluid. The container is used to provide a proper width for the layout, acting as a wrapper for the content. <br/> Containers have padding of 15px on the left and right sides.</p>
+<p>Bootstrap’s grid system needs a container or container-fluid to hold rows and columns. A container is a simple element with a class of .container or .container-fluid. The container is used to provide a proper width for the layout, acting as a wrapper for the content. Containers have padding of 15px on the left and right sides.</p>
 <ul>
   <li>The .container class provides a responsive fixed width container. It has specific pixel width values that change its width value with the help of media queries.</li>
   <li>The .container-fluid class provides a full width container, spanning the entire width of the viewport. It has 100% width.</li>
 </ul>
-<h4>Why we use container or container fluid?</h4>
+<h4>Why should we use container or container-fluid?</h4>
 <p>The .row has a negative left and right margin equal to the left/right padding value of the col-*-*, that is why there are horizontal scrollbars. To overcome the negative spacing we are using container or container fluid above the row.</p>
 <h4>Example :</h4>
 <h5>Container</h5>
@@ -41,13 +40,13 @@ Bootstrap's include mobile first fluid grid system that appropriately scales up 
 <h5>Without Row : In this demo, you can see the text is not touching the left edge of the container element. This is because the container’s padding.</h5>
 <code>&lt;div class="container"&gt;<br/>&nbsp;&lt;p&gt;Bootstrap Grid demo with row&lt;/p&gt;<br/>&lt;/div&gt;</code>
 <div class="container example-container">
-  <p>Bootstrap Grid demo with row</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est eget tristique vestibulum. Fusce et pulvinar erat, id viverra sem. Vivamus porttitor, sapien nec mattis fermentum, sem augue ornare erat, vitae interdum ante sapien id libero. Vestibulum luctus augue pretium purus posuere.</p>
 </div>
 <h5>With Row : In this demo, you can see the text touching the left edge of the container. This is because the container’s padding has been removed by the row due to the negative margins on the row.</h5>
 <code>&lt;div class="container"&gt;<br/>&nbsp;&lt;div class="rows"&gt;<br/>&nbsp;&nbsp;&lt;p&gt;Bootstrap Grid demo with row&lt;/p&gt;<br/>&nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code>
 <div class="container example-container">
   <div class="row">
-    <p>Bootstrap Grid demo with row</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est eget tristique vestibulum. Fusce et pulvinar erat, id viverra sem. Vivamus porttitor, sapien nec mattis fermentum, sem augue ornare erat, vitae interdum ante sapien id libero. Vestibulum luctus augue pretium purus posuere.</p>
   </div>
 </div>
 <hr/>
@@ -64,17 +63,17 @@ Bootstrap's include mobile first fluid grid system that appropriately scales up 
     <tr class="bg-info">
       <td>.col-sm-$</td>
       <td>Small Devices</td>
-      <td>Tablets 768px and Up</td>
+      <td>Tablets 768px and Higher</td>
     </tr>
     <tr class="bg-warning">
       <td>.col-md-$</td>
       <td>Medium Devices</td>
-      <td>Desktops 992px and Up</td>
+      <td>Desktops 992px and Higher</td>
     </tr>
     <tr class="bg-danger">
       <td>.col-lg-$</td>
       <td>Large Devices</td>
-      <td>Large Desktops 1200px and Up</td>
+      <td>Large Desktops 1200px and Higher</td>
     </tr>
   </tbody>
 </table>
@@ -123,16 +122,19 @@ Bootstrap's include mobile first fluid grid system that appropriately scales up 
 </div>
 <hr/>
 <h4>Best Approach to use columns</h4>
-<p>With a mobile-first approach at its core, designers has to create sites for small screens, then scale designs up from there. We don't need to add extra classes. It will help speeding up the application.</p>
+<p>With a mobile-first approach at its core, designers can create sites for small screens and then progressively move up to the tablets and finally scale up to desktops.
+<br/>
+If we are using the 12 columns for all the screens we can follow like this:
+</p>
 <h4>Example :</h4>
-<p>If we are using the 12 columns for all the screens we can follow like this:</p>
+<p>If we are using 12 columns for extra-small, small, medium and large screens, then we can use the col-xs-12 class directly as shown below:</p>
 <code>&lt;div class="container"&gt;<br/>&nbsp;&lt;div class="rows"&gt;<br/>&nbsp;&nbsp;&lt;div class="col-xs-12"&gt;&lt;/div&gt;<br/>&nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code>
 
-<p>Suppose we need 12 columns grid for mobile and 6 columns for the rest of the screen we can follow like this:</p>
+<p>Suppose we need 12 columns grid for extra-small and 6 columns for the rest of the screen we can follow like this:</p>
 <code>&lt;div class="container"&gt;<br/>&nbsp;&lt;div class="rows"&gt;<br/>&nbsp;&nbsp;&lt;div class="col-xs-12 col-sm-6"&gt;&lt;/div&gt;<br/>&nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code>
 
-<p>Suppose we need 12 columns grid for mobile, 6 columns for tablet and 4 column for the rest of the screen we can follow like this:</p>
+<p>Suppose we need 12 columns grid for extra-small, 6 columns for small and 4 column for the rest of the screen sizes, we can follow this:</p>
 <code>&lt;div class="container"&gt;<br/>&nbsp;&lt;div class="rows"&gt;<br/>&nbsp;&nbsp;&lt;div class="col-xs-12 col-sm-6 col-md-4"&gt;&lt;/div&gt;<br/>&nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code>
 
-<p>Suppose we need 12 columns grid for mobile, 6 columns for tablet, 4 column for desktop and 2 column for larger desktop we can follow like this:</p>
+<p>Suppose we need 12 columns grid for extra-small, 6 columns for small, 4 column for medium and 2 column for larger screen sizes we can follow this:</p>
 <code>&lt;div class="container"&gt;<br/>&nbsp;&lt;div class="rows"&gt;<br/>&nbsp;&nbsp;&lt;div class="col-xs-12 col-sm-6 col-md-4 col-lg-2"&gt;&lt;/div&gt;<br/>&nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code>

@@ -4,7 +4,8 @@ draft = false
 title = "Speeding Up"
 
 +++
-<p>Make sure you do not end-up writing tons of duplicated code creating too many styles for the same case each time over and over again when translating new designs to the code. Keeping the UI development consistent and well documented with UI style guides can also add a couple of knots.</p>
+<h3>Speed up CSS development</h3>
+<p>The following tips will help you to speed up your CSS development when using bootstrap. <br/> Keeping the UI development consistent and well documented with UI style guides can also help to avoid getting into knots.</p>
 
 <p>Use bootstrap helper classes rather than write your custom class to do something.</p>
 <ul>
@@ -50,7 +51,7 @@ title = "Speeding Up"
   </li>
   <br/>
   <li>
-    When killing .row class margins use clearfix rather than row.<br/>
+    When removing .row margins, use clearfix rather than row class.<br/>
     <code>&lt;div class="clearfix"&gt;...&lt;/div&gt;</code>
   </li>
 </ul>

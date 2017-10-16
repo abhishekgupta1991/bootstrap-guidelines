@@ -24,12 +24,12 @@ title = "Grid System"
 <p>The .row has a negative left and right margin equal to the left/right padding value of the col-*-*, that is why there are horizontal scrollbars. To overcome the negative spacing we are using container or container fluid above the row.</p>
 <h4>Example :</h4>
 <h5>Container</h5>
-<code>&lt;div class="container"&gt;&lt;/div&gt;</code>
+<code>&lt;div class="container"&gt;<br/>&nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est eget tristique vestibulum. Fusce et pulvinar erat, id viverra sem. Vivamus porttitor, sapien nec mattis fermentum, sem augue ornare erat, vitae interdum ante sapien id libero. Vestibulum luctus augue pretium purus posuere.&lt;/p&gt;<br/>&lt;/div&gt;</code>
 <div class="container example-container">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est eget tristique vestibulum. Fusce et pulvinar erat, id viverra sem. Vivamus porttitor, sapien nec mattis fermentum, sem augue ornare erat, vitae interdum ante sapien id libero. Vestibulum luctus augue pretium purus posuere.</p>
 </div>
 <h5>Container Fluid</h5>
-<code>&lt;div class="container-fluid"&gt;&lt;/div&gt;</code>
+<code>&lt;div class="container-fluid"&gt;<br/>&nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est eget tristique vestibulum. Fusce et pulvinar erat, id viverra sem. Vivamus porttitor, sapien nec mattis fermentum, sem augue ornare erat, vitae interdum ante sapien id libero. Vestibulum luctus augue pretium purus posuere.&lt;/p&gt;<br/>&lt;/div&gt;</code>
 <div class="container-fluid example-container">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est eget tristique vestibulum. Fusce et pulvinar erat, id viverra sem. Vivamus porttitor, sapien nec mattis fermentum, sem augue ornare erat, vitae interdum ante sapien id libero. Vestibulum luctus augue pretium purus posuere.</p>
 </div>
@@ -37,13 +37,13 @@ title = "Grid System"
 <h4>Creating Rows</h4>
 <p>A row acts like a wrapper around the columns. Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on '.rows'.</p>
 <h4>Example :</h4>
-<h5>Without Row : In this demo, you can see the text is not touching the left edge of the container element. This is because the container’s padding.</h5>
-<code>&lt;div class="container"&gt;<br/>&nbsp;&lt;p&gt;Bootstrap Grid demo with row&lt;/p&gt;<br/>&lt;/div&gt;</code>
+<h5>With : In this demo, you can see the text is not touching the left edge of the container element. This is because the container’s padding.</h5>
+<code>&lt;div class="container"&gt;<br/>&nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est eget tristique vestibulum. Fusce et pulvinar erat, id viverra sem. Vivamus porttitor, sapien nec mattis fermentum, sem augue ornare erat, vitae interdum ante sapien id libero. Vestibulum luctus augue pretium purus posuere.&lt;/p&gt;<br/>&lt;/div&gt;</code>
 <div class="container example-container">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est eget tristique vestibulum. Fusce et pulvinar erat, id viverra sem. Vivamus porttitor, sapien nec mattis fermentum, sem augue ornare erat, vitae interdum ante sapien id libero. Vestibulum luctus augue pretium purus posuere.</p>
 </div>
-<h5>With Row : In this demo, you can see the text touching the left edge of the container. This is because the container’s padding has been removed by the row due to the negative margins on the row.</h5>
-<code>&lt;div class="container"&gt;<br/>&nbsp;&lt;div class="rows"&gt;<br/>&nbsp;&nbsp;&lt;p&gt;Bootstrap Grid demo with row&lt;/p&gt;<br/>&nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code>
+<h5>Without Row : In this demo, you can see the text touching the left edge of the container. This is because the container’s padding has been removed by the row due to the negative margins on the row.</h5>
+<code>&lt;div class="container"&gt;<br/>&nbsp;&lt;div class="rows"&gt;<br/>&nbsp;&nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est eget tristique vestibulum. Fusce et pulvinar erat, id viverra sem. Vivamus porttitor, sapien nec mattis fermentum, sem augue ornare erat, vitae interdum ante sapien id libero. Vestibulum luctus augue pretium purus posuere.&lt;/p&gt;<br/>&nbsp;&lt;/div&gt;<br/>&lt;/div&gt;</code>
 <div class="container example-container">
   <div class="row">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est eget tristique vestibulum. Fusce et pulvinar erat, id viverra sem. Vivamus porttitor, sapien nec mattis fermentum, sem augue ornare erat, vitae interdum ante sapien id libero. Vestibulum luctus augue pretium purus posuere.</p>
